@@ -23,7 +23,7 @@ const P = styled.p`
 `;
 
 const GrayLabel = Label.extend`
-  margin-top: 32px;
+  margin-top: 34px;
   font-size: 16px;
   line-height: 22px;
   color: #ababab;
