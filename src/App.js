@@ -1,8 +1,8 @@
 import React from 'react';
-import Main from './Main';
+import Hero from './Hero';
 
 export default () => (
   <main>
-    <Main />
+    <Hero />
   </main>
 );
