@@ -45,12 +45,12 @@ export default () => (
     <Wrapper>
       <Grid>
         <Row>
-        <Col xs={12} lg={6}>
-          <Label>Наша гордость</Label>
-          <Title>
-            Команда
-          </Title>
-        </Col>
+          <Col xs={12} lg={6}>
+            <Label>Наша гордость</Label>
+            <Title>
+              Команда
+            </Title>
+          </Col>
         </Row>
 
         <Row>

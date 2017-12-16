@@ -5,6 +5,7 @@ import How from './How';
 import Sheets from './Sheets';
 import Communication from './Communication';
 import Team from './Team';
+import Footer from './Footer';
 
 export default () => (
   <main>
@@ -14,5 +15,6 @@ export default () => (
     <Sheets />
     <Communication />
     <Team />
+    <Footer />
   </main>
 );
