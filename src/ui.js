@@ -26,6 +26,16 @@ export const H2 = styled.h2`
   }
 `;
 
+export const H3 = styled.h3`
+  font: bold 20px/25px 'Montserrat', Helvetica Neue, Arial, sans-serif;
+  margin: 0;
+
+  @media screen and (min-width: 576px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+`;
+
 export const Label = styled.span`
   display: inline-block;
   font-size: 14px;

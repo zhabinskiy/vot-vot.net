@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Wrapper, Label, H2 } from './ui';
+import { Wrapper, Label, H2 } from '../ui';
 
 const Container = styled.section`
   margin-top: 60px;
