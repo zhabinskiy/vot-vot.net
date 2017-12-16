@@ -1,3 +1,8 @@
 import React from 'react';
+import Main from './Main';
 
-export default () => <div className="App">Straykov cidre</div>;
+export default () => (
+  <main>
+    <Main />
+  </main>
+);
