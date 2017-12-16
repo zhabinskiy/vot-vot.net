@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Wrapper, } from '../ui';
+import { Wrapper } from '../ui';
 
 const Container = styled.section`
   background-color: #1F1F1F;

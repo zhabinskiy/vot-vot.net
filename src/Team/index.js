@@ -5,6 +5,7 @@ import { Wrapper, Label, H2, H3 } from '../ui';
 
 const Container = styled.section`
   margin-top: 60px;
+  margin-bottom: 5px;
 
   @media screen and (min-width: 576px) {
     margin-top: 120px;

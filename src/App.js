@@ -5,6 +5,7 @@ import How from './How';
 import Sheets from './Sheets';
 import Communication from './Communication';
 import Team from './Team';
+import Form from './Form';
 import Footer from './Footer';
 
 export default () => (
@@ -15,6 +16,7 @@ export default () => (
     <Sheets />
     <Communication />
     <Team />
+    <Form />
     <Footer />
   </main>
 );
