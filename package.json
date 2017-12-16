@@ -2,16 +2,22 @@
   "name": "vot-vot.net",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vot-vot.net/",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-flexbox-grid": "^2.0.0",
+    "react-scripts": "1.0.17",
+    "styled-components": "^2.3.0"
+  },
+  "devDependencies": {
+    "npm-run-notify": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy:sync": "rsync -avz -r ./build/* zhabinskiy.me:/var/www/vot-vot.net/",
-    "deploy:notify": "npm-run-notify --message '🚀 Deployed' --sound Glass",
+    "deploy:notify": "npm-run-notify --message '🚀 Deployed' --title 'vot-vot.net' --sound Glass",
     "deploy": "yarn build && yarn deploy:sync && yarn deploy:notify",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
