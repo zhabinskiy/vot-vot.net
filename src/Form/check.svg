@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>check</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7449 -11459)">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(7454 11466)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 5 9L 3.99655 10.1149L 5.05436 11.067L 6.06066 10.0607L 5 9ZM -1.00345 5.61494L 3.99655 10.1149L 6.00345 7.88506L 1.00345 3.38506L -1.00345 5.61494ZM 6.06066 10.0607L 15.0607 1.06066L 12.9393 -1.06066L 3.93934 7.93934L 6.06066 10.0607Z"/>
+</defs>
+</svg>
