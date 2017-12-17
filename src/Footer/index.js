@@ -72,6 +72,11 @@ const SocialWrapper = styled.a`
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
+    will-change: transform;
+  }
+
+  &:active {
+    transform: scale(0.975);
   }
 `;
 
