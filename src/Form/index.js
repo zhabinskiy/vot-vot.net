@@ -70,7 +70,7 @@ const DiscountLabel = styled.div`
 `;
 
 export default class Form extends Component {
-  state = { totalPrice: 0 };
+  state = { totalPrice: 0, isModalOpened: true };
 
   handleChange = (value, index) => {
     this.setState(prevState => ({
