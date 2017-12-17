@@ -28,10 +28,6 @@ const Position = styled.div`
   margin-bottom: 60px;
 `;
 
-const P = styled.p`
-  margin-top: 0;
-`;
-
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
