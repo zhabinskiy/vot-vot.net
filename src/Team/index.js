@@ -22,7 +22,7 @@ const Name = H3.extend`
 `;
 
 const Position = styled.div`
-  color: #1F1F1F;
+  color: #1f1f1f;
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 60px;
@@ -32,12 +32,14 @@ const P = styled.p`
   margin-top: 0;
 `;
 
-const Photo = styled.img `
+const Photo = styled.img`
   display: block;
+  margin: 0 auto;
   width: 60%;
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 576px) {
     width: 100%;
+    margin: auto;
   }
 `;
 
@@ -45,81 +47,75 @@ export default () => (
   <Container>
     <Wrapper>
       <Grid>
-        <Row>
+        <Row center="xs" start="sm">
           <Col xs={12} lg={6}>
             <Label>Наша гордость</Label>
-            <Title>
-              Команда
-            </Title>
+            <Title>Команда</Title>
           </Col>
         </Row>
 
-        <Row>
-          <Col xs={12} md={6} lg={3}>
+        <Row center="xs" start="sm">
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Константин Жабинский</Name>
             <Position>Директор по дискоммуникациям и визуалной слепоте</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Илья Страйков</Name>
             <Position>Начальник отдела имитации разработки</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Вера Жабинская</Name>
             <Position>Менеджер, заканчивает письма словами «На связи» (это обнадёживает)</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Дарья Пономарёва</Name>
             <Position>Руководитель отдела сбрасывания звонков</Position>
           </Col>
-        </Row>
 
-        <Row>
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Владислав Касаткин</Name>
             <Position>Head of Mobile Development, former Victor Arthur</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Константин Константинопольский</Name>
             <Position>Ответственный за происшествия с исполнителями</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Артём Иванов</Name>
             <Position>Разработчик, ухаживает за умирающей бабушкой</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Антонина Михайловна</Name>
             <Position>Бабушка Артёма, профессиональная актриса</Position>
           </Col>
-        </Row>
 
-        <Row>
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Евгений Волосатенко</Name>
             <Position>Дизайнер, живёт в доме без света</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>superglow1</Name>
             <Position>Фрилансер. Мы не знаем, как его зовут, на Фриланс.ру нашли</Position>
           </Col>
 
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={10} sm={6} md={4} lg={3}>
             <Photo src={require('./vlad.png')} />
             <Name>Кошка</Name>
             <Position>Кошка. Готова вот-вот родить в нужный момент</Position>

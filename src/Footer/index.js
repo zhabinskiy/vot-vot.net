@@ -4,7 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Wrapper } from '../ui';
 
 const Container = styled.section`
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   color: white;
   padding: 80px 0 60px 0;
   font-size: 18px;
@@ -21,7 +21,7 @@ const Social = styled.div`
 `;
 
 const Link = styled.a`
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
 
   &:hover {
     color: white;
@@ -30,7 +30,7 @@ const Link = styled.a`
 
 const Copyright = styled.div`
   margin-top: 80px;
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
 
   @media screen and (min-width: 992px) {
     margin-top: 130px;
@@ -43,13 +43,18 @@ const Logo = styled.img`
   top: 4px;
 `;
 
+const NoWrap = styled.span`
+  white-space: nowrap;
+`;
+
 export default () => (
   <Container>
     <Wrapper>
       <Grid>
         <Row>
           <Col xs={12} lg={6}>
-            Агентство отложенных диджитал-решений<br />«Вот-вот запустим». Держим слово с 2017 года
+            Агентство отложенных диджитал-решений<br />«Вот-вот запустим». Держим слово с&nbsp;2017
+            года
           </Col>
           <Col xs={12} lg={6}>
             <Social>Тут соцсети</Social>
@@ -57,7 +62,18 @@ export default () => (
         </Row>
         <Row>
           <Col xs={12} lg={12}>
-            <Copyright>Наконец-то запустили <Link href="http://gridly.ru"><Logo src={require('./gridly-logo.svg')} />Гридли</Link> и <Link href="http://codecode.ru"><Logo src={require('./codecode-logo.svg')} />Кодельная</Link></Copyright>
+            <Copyright>
+              Наконец-то запустили{' '}
+              <Link href="http://gridly.ru">
+                <Logo src={require('./gridly-logo.svg')} />Гридли
+              </Link>{' '}
+              <NoWrap>
+                и&nbsp;
+                <Link href="http://codecode.ru">
+                  <Logo src={require('./codecode-logo.svg')} />Кодельная
+                </Link>
+              </NoWrap>
+            </Copyright>
           </Col>
         </Row>
       </Grid>
