@@ -52,67 +52,67 @@ export default () => (
 
         <Row center="xs" start="sm">
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./zhabinskiy@2x.jpg')} />
             <Name>Константин Жабинский</Name>
             <Position>Директор по дискоммуникациям и визуалной слепоте</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./straykov@2x.jpg')} />
             <Name>Илья Страйков</Name>
             <Position>Начальник отдела имитации разработки</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./zhabinskaya@2x.jpg')} />
             <Name>Вера Жабинская</Name>
             <Position>Менеджер, заканчивает письма словами «На связи» (это обнадёживает)</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./daria@2x.jpg')} />
             <Name>Дарья Пономарёва</Name>
             <Position>Руководитель отдела сбрасывания звонков</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./vlad@2x.jpg')} />
             <Name>Владислав Касаткин</Name>
             <Position>Head of Mobile Development, former Victor Arthur</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./konstantinopolksiy@2x.jpg')} />
             <Name>Константин Константинопольский</Name>
             <Position>Ответственный за происшествия с исполнителями</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./artem@2x.jpg')} />
             <Name>Артём Иванов</Name>
             <Position>Разработчик, ухаживает за умирающей бабушкой</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./babushka@2x.jpg')} />
             <Name>Антонина Михайловна</Name>
             <Position>Бабушка Артёма, профессиональная актриса</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./volosatenko@2x.jpg')} />
             <Name>Евгений Волосатенко</Name>
             <Position>Дизайнер, живёт в доме без света</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./none@2x.jpg')} />
             <Name>superglow1</Name>
             <Position>Фрилансер. Мы не знаем, как его зовут, на Фриланс.ру нашли</Position>
           </Col>
 
           <Col xs={10} sm={6} md={4} lg={3}>
-            <Photo src={require('./vlad.png')} />
+            <Photo src={require('./cat@2x.jpg')} />
             <Name>Кошка</Name>
             <Position>Кошка. Готова вот-вот родить в нужный момент</Position>
           </Col>
