@@ -91,11 +91,11 @@ export default () => (
           </Col>
           <Col xs={12} lg={6}>
             <Social>
-              <SocialLink href="#" src={require('./facebook.svg')}/>
-              <SocialLink href="#" src={require('./vk.svg')}/>
-              <SocialLink href="#" src={require('./twitter.svg')}/>
-              <SocialLink href="#" src={require('./ok.svg')}/>
-              <SocialLink href="#" src={require('./telegram.svg')}/>
+              <SocialLink href="https://www.facebook.com/sharer/sharer.php?u=https://vot-vot.net" src={require('./facebook.svg')}/>
+              <SocialLink href="https://vk.com/share.php?url=https://vot-vot.net" src={require('./vk.svg')}/>
+              <SocialLink href="https://twitter.com/intent/tweet?url=https://vot-vot.net" src={require('./twitter.svg')}/>
+              <SocialLink href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=https://vot-vot.net" src={require('./ok.svg')}/>
+              <SocialLink href="https://telegram.me/share/url?url=https://vot-vot.net" src={require('./telegram.svg')}/>
             </Social>
           </Col>
         </Row>
