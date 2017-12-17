@@ -68,6 +68,7 @@ const SocialWrapper = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
