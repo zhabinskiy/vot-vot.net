@@ -55,7 +55,7 @@ const Discount = styled.div`
 const DiscountPrice = styled.div`
   text-align: center;
   font: 900 52px/52px 'Montserrat', Helvetica Neue, Arial, sans-serif;
-  color: #FFDA00;
+  color: #ffda00;
   margin-top: 60px;
 `;
 
@@ -110,7 +110,9 @@ export default class Form extends Component {
                 <Fields>
                   <Discount>
                     <DiscountPrice>30%</DiscountPrice>
-                    <DiscountLabel>Скидка до<br />31&nbsp;декабря</DiscountLabel>
+                    <DiscountLabel>
+                      Скидка до<br />31&nbsp;декабря
+                    </DiscountLabel>
                   </Discount>
 
                   <Input price={2100} onChange={() => this.handleChange(2100, 1)}>
@@ -120,13 +122,16 @@ export default class Form extends Component {
                     Проблемы с&nbsp;сервером, вызванные наводнением на&nbsp;столе сисадмина
                   </Input>
                   <Input price={2000} onChange={() => this.handleChange(2000, 3)}>
-                    Общий созвон со&nbsp;всеми сотрудниками с&nbsp;двух сторон для обсуждения изменений в&nbsp;правках
+                    Общий созвон со&nbsp;всеми сотрудниками с&nbsp;двух сторон для обсуждения
+                    изменений в&nbsp;правках
                   </Input>
                   <Input price={13000} onChange={() => this.handleChange(13000, 4)}>
-                    Задержка на&nbsp;четыре дня в&nbsp;связи со&nbsp;сменой старого менеджера на&nbsp;нового менеджера
+                    Задержка на&nbsp;четыре дня в&nbsp;связи со&nbsp;сменой старого менеджера
+                    на&nbsp;нового менеджера
                   </Input>
                   <Input price={30000} onChange={() => this.handleChange(30000, 5)}>
-                    Дизайнер попадает в&nbsp;ДТП на мопеде в&nbsp;Тайланде, сбивает человека и&nbsp;незаконно покидает страну с&nbsp;поддельными документами
+                    Дизайнер попадает в&nbsp;ДТП на мопеде в&nbsp;Тайланде, сбивает человека
+                    и&nbsp;незаконно покидает страну с&nbsp;поддельными документами
                   </Input>
                   <Input price={85000} onChange={() => this.handleChange(85000, 6)}>
                     Переписывание фронтенда с&nbsp;Ангуляра на&nbsp;Ангуляр 2

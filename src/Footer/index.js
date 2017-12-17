@@ -77,59 +77,87 @@ const SocialWrapper = styled.a`
 
 const Icon = styled.img``;
 
-const SocialLink = ({href, src, onClick}) => (
+const SocialLink = ({ href, src, onClick }) => (
   <SocialWrapper href={href} onClick={onClick} target="_blank">
-    <Icon src={src}/>
+    <Icon src={src} />
   </SocialWrapper>
 );
 
-
 export default class Footer extends React.Component {
-
   shareLink = (link) => {
     window.open(link, 'sharer', 'toolbar=0,status=0,width=548,height=325');
-  }
+  };
 
   render() {
     return (
-  <Container>
-    <Wrapper>
-      <Grid>
-        <Row>
-          <Col xs={12} lg={6}>
-            Агентство отложенных диджитал-решений<br />«Вот-вот запустим». Держим слово с&nbsp;2017 года
-          </Col>
-          <Col xs={12} lg={6}>
-            <Social>
-              <SocialLink onClick={() => this.shareLink('https://www.facebook.com/sharer/sharer.php?u=https://vot-vot.net')} src={require('./facebook.svg')}/>
-              <SocialLink onClick={() => this.shareLink('https://vk.com/share.php?url=https://vot-vot.net')} src={require('./vk.svg')}/>
-              <SocialLink onClick={() => this.shareLink('https://twitter.com/intent/tweet?url=https://vot-vot.net')} src={require('./twitter.svg')}/>
-              <SocialLink onClick={() => this.shareLink('http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=https://vot-vot.net')} src={require('./ok.svg')}/>
-              <SocialLink onClick={() => this.shareLink('https://telegram.me/share/url?url=https://vot-vot.net')} src={require('./telegram.svg')}/>
-            </Social>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} lg={12}>
-            <Copyright>
-              Наконец-то запустили{' '}
-              <NoWrap>
-                <Link href="http://gridly.ru">
-                  <Logo src={require('./gridly-logo.svg')} />Гридли
-                </Link>{' '}
-              </NoWrap>
-              <NoWrap>
-                и&nbsp;
-                <Link href="http://codecode.ru">
-                  <Logo src={require('./codecode-logo.svg')} />Кодельная
-                </Link>
-              </NoWrap>
-            </Copyright>
-          </Col>
-        </Row>
-      </Grid>
-    </Wrapper>
-  </Container>
-);
-}
+      <Container>
+        <Wrapper>
+          <Grid>
+            <Row>
+              <Col xs={12} lg={6}>
+                Агентство отложенных диджитал-решений<br />«Вот-вот запустим». Держим слово
+                с&nbsp;2017 года
+              </Col>
+              <Col xs={12} lg={6}>
+                <Social>
+                  <SocialLink
+                    onClick={() =>
+                      this.shareLink(
+                        'https://www.facebook.com/sharer/sharer.php?u=https://vot-vot.net',
+                      )
+                    }
+                    src={require('./facebook.svg')}
+                  />
+                  <SocialLink
+                    onClick={() =>
+                      this.shareLink('https://vk.com/share.php?url=https://vot-vot.net')
+                    }
+                    src={require('./vk.svg')}
+                  />
+                  <SocialLink
+                    onClick={() =>
+                      this.shareLink('https://twitter.com/intent/tweet?url=https://vot-vot.net')
+                    }
+                    src={require('./twitter.svg')}
+                  />
+                  <SocialLink
+                    onClick={() =>
+                      this.shareLink(
+                        'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=https://vot-vot.net',
+                      )
+                    }
+                    src={require('./ok.svg')}
+                  />
+                  <SocialLink
+                    onClick={() =>
+                      this.shareLink('https://telegram.me/share/url?url=https://vot-vot.net')
+                    }
+                    src={require('./telegram.svg')}
+                  />
+                </Social>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} lg={12}>
+                <Copyright>
+                  Наконец-то запустили{' '}
+                  <NoWrap>
+                    <Link href="http://gridly.ru">
+                      <Logo src={require('./gridly-logo.svg')} />Гридли
+                    </Link>{' '}
+                  </NoWrap>
+                  <NoWrap>
+                    и&nbsp;
+                    <Link href="http://codecode.ru">
+                      <Logo src={require('./codecode-logo.svg')} />Кодельная
+                    </Link>
+                  </NoWrap>
+                </Copyright>
+              </Col>
+            </Row>
+          </Grid>
+        </Wrapper>
+      </Container>
+    );
+  }
 }
