@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Wrapper, Label, H2 } from '../ui';
 import Input from './Input';
 import Result from './Result';
+import Modal from './Modal';
 
 const Container = styled.section`
   width: 100%;
@@ -165,6 +166,8 @@ export default class Form extends Component {
             </Row>
           </Grid>
         </Wrapper>
+
+        <Modal isModalOpened={this.state.isModalOpened} onClick={this.modalHandler}/>
       </Container>
     );
   }
