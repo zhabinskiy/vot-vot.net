@@ -33,10 +33,16 @@ const Fields = styled.form`
 export default class Form extends Component {
   state = { totalPrice: 0 };
 
-  handleChange = (value) => {
+  handleChange = (value, index) => {
     this.setState(prevState => ({
-      isChecked: !prevState.isChecked,
-      totalPrice: value,
+      [index]: !prevState[index],
+      totalPrice: this.state[index] ? this.state.totalPrice - value : this.state.totalPrice + value,
+    }));
+  };
+
+  modalHandler = () => {
+    this.setState(prevState => ({
+      isModalOpened: !prevState.isModalOpened,
     }));
   };
 
@@ -64,17 +70,16 @@ export default class Form extends Component {
             <Row>
               <Col xs={12} lg={8}>
                 <Fields>
-                  <Input
-                    price={2000}
-                    checked={this.state.isChecked}
-                    onClick={() => this.handleChange(2000)}
-                  >
+                  <Input price={2000} onChange={() => this.handleChange(2000, 1)}>
+                    Отключение света, к вечеру должны
+                  </Input>
+                  <Input price={3000} onChange={() => this.handleChange(3000, 2)}>
                     Отключение света, к вечеру должны
                   </Input>
                 </Fields>
               </Col>
               <Col xs={12} lg={4}>
-                <Result price={this.state.totalPrice} />
+                <Result totalPrice={this.state.totalPrice} onClick={this.modalHandler} />
               </Col>
             </Row>
           </Grid>

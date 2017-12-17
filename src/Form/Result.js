@@ -64,12 +64,12 @@ const Button = styled.button`
   }
 `;
 
-export default ({ price }) => (
+export default ({ totalPrice, onClick }) => (
   <Container>
     <Content>
       <Title>С учётом новогодней скидки:</Title>
-      <Price>{price || '0'} ₽</Price>
+      <Price>{totalPrice || '0'} ₽</Price>
     </Content>
-    <Button>Заказать</Button>
+    <Button onClick={onClick}>Заказать</Button>
   </Container>
 );

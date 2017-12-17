@@ -95,12 +95,12 @@ const Price = styled.div`
   padding-left: 20px;
 `;
 
-export default ({ onClick, checked, children, price }) => (
-  <Label onClick={onClick}>
-    <Content onClick={onClick}>
-      <Checkbox type="checkbox" checked={checked} value={price} onClick={onClick} />
+export default ({ onChange, price, children }) => (
+  <Label onChange={onChange}>
+    <Content onChange={onChange}>
+      <Checkbox type="checkbox" value={price} onChange={onChange} />
       <Title>{children}</Title>
     </Content>
-    <Price onClick={onClick}>{price} ₽</Price>
+    <Price>{price || '0'} ₽</Price>
   </Label>
 );
