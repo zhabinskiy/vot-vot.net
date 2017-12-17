@@ -11,6 +11,11 @@ const Label = styled.label`
   align-items: flex-start;
   margin-bottom: 34px;
   cursor: pointer;
+  flex-direction: column;
+
+  @media screen and (min-width: 576px) {
+    flex-direction: row;
+  }
 
   &::selection {
     background: #fff;
@@ -92,7 +97,13 @@ const Price = styled.div`
   white-space: nowrap;
   font-weight: bold;
   text-align: right;
-  padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 42px;
+
+  @media screen and (min-width: 576px) {
+    margin: 0;
+    padding-left: 20px;
+  }
 `;
 
 export default ({ onChange, price, children }) => (

@@ -2,6 +2,8 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Container = styled.section`
+  top: 20px;
+  z-index: 8;
   position: sticky;
   margin-top: 20px;
   padding: 40px 20px 20px;

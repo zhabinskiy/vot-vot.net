@@ -83,31 +83,6 @@ const SocialLink = ({href, src, onClick}) => (
   </SocialWrapper>
 );
 
-const Discount = styled.div`
-  position: absolute;
-  width: 213px;
-  height: 213px;
-  background: url(${require('./discount.svg')}) no-repeat;
-  background-size: cover;
-  top: 10px;
-  right: 30px;
-`;
-
-const DiscountPrice = styled.div`
-  text-align: center;
-  font: 900 52px/52px 'Montserrat', Helvetica Neue, Arial, sans-serif;
-  color: #FFDA00;
-  margin-top: 60px;
-`;
-
-const DiscountLabel = styled.div`
-  font-weight: bold;
-  padding-top: 5px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-`;
-
 
 export default class Footer extends React.Component {
 
@@ -121,13 +96,6 @@ export default class Footer extends React.Component {
     <Wrapper>
       <Grid>
         <Row>
-
-          <Discount>
-            <DiscountPrice>30%</DiscountPrice>
-            <DiscountLabel>Скидка до<br />31&nbsp;декабря</DiscountLabel>
-          </Discount>
-
-
           <Col xs={12} lg={6}>
             Агентство отложенных диджитал-решений<br />«Вот-вот запустим». Держим слово с&nbsp;2017 года
           </Col>
