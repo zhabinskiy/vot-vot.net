@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Modal = styled.div`
-  display: ${props => (props.isModalOpened ? 'flex' : 'none')};
+  // display: ${props => (props.isModalOpened ? 'flex' : 'none')};
+  visibility: ${props => (props.isModalOpened ? 'visible' : 'hidden')};
   justify-content: center;
-	align-items: center;
+  align-items: center;
 `;
 
 const Overlay = styled.div`
@@ -18,19 +19,22 @@ const Overlay = styled.div`
 `;
 
 const Panel = styled.div`
-  background: black;
+  background: #1f1f1f;
   position: fixed;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 30;
   width: 900px;
   height: 460px;
+  transform: ${props => (props.isModalOpened ? 'translate(-50%, -50%)' : 'translate(-50%, -30%)')};
+  opacity: ${props => (props.isModalOpened ? '1' : '0')};
+  transition: 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 `;
 
-export default ({isModalOpened, onClick}) => (
+export default ({ isModalOpened, onClick }) => (
   <Modal isModalOpened={isModalOpened}>
-    <Overlay onClick={onClick}></Overlay>
-    <Panel>
-      Хуище
-    </Panel>
+    <Overlay onClick={onClick} />
+    <Panel isModalOpened={isModalOpened}>Хуище</Panel>
   </Modal>
 );

@@ -29,8 +29,8 @@ const Social = styled.div`
 `;
 
 const Link = styled.a`
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s;
 
   &:hover {
     color: white;
@@ -54,7 +54,8 @@ const Logo = styled.img`
   padding-right: 8px;
   position: relative;
   top: 4px;
-  opacity: 0.8;
+  opacity: 0.6;
+  transition: 0.2s;
 `;
 
 const NoWrap = styled.span`
