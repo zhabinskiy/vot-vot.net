@@ -121,7 +121,7 @@ export default class Modal extends React.Component {
   <Container isModalOpened={isModalOpened}>
     <Overlay onClick={onClick} />
     <Panel isModalOpened={isModalOpened}>
-      <Close><img src={require('./close.svg')} onClick={onClick} /></Close>
+      <Close onClick={onClick}><img src={require('./close.svg')} /></Close>
       <Grid>
         <Row center="xs" start="lg">
           <Col xs={12} md={8} lg={5}>
