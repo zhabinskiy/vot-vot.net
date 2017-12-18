@@ -22,18 +22,19 @@ const Overlay = styled.div`
 const Panel = styled.div`
   background: #1f1f1f;
   color: white;
-  position: absolute;
+  overflow-y: scroll;
   top: 0;
-  padding: 55px;
+  position: fixed;
+  padding: 55px 10px 55px 10px;
   z-index: 30;
-  max-width: 790px;
   opacity: ${props => (props.isModalOpened ? '1' : '0')};
   transition: 0.6s cubic-bezier(0.86, 0, 0.07, 1);
   min-height: 100vh;
 
   @media screen and (min-width: 576px) {
     position: fixed;
-    top: 0;
+    padding: 55px;
+    max-width: 790px;
     min-height: auto;
     top: 50%;
     left: 50%;
@@ -73,11 +74,14 @@ const Social = styled.div`
   position: relative;
   margin-top: 45px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   @media screen and (min-width: 992px) {
     left: -27px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 `;
 
@@ -101,6 +105,17 @@ const SocialWrapper = styled.a`
 `;
 
 const Icon = styled.img``;
+
+const Screen = styled.img`
+  margin-top: 40px;
+  width: 100%;
+
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+`;
 
 const SocialLink = ({ href, src, onClick }) => (
   <SocialWrapper href={href} onClick={onClick} target="_blank">
@@ -167,7 +182,7 @@ export default class Modal extends React.Component {
               />
             </Social>
           </Col>
-          <Col xs={12} md={8} lgOffset={1} lg={6}><img src={require('./picture.png')} width="100%" style={{marginTop: "40px"}}/></Col>
+          <Col xs={12} md={8} lgOffset={1} lg={6}><Screen src={require('./picture.png')} /></Col>
         </Row>
       </Grid>
     </Panel>
