@@ -1,0 +1,20 @@
+<svg width="22" height="21" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 8</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7640 -12389)">
+<g id="Group 8">
+<g id="Rectangle 10">
+<use xlink:href="#path0_fill" transform="translate(7649 12389)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 10.1">
+<use xlink:href="#path0_fill" transform="matrix(0.5 -0.866025 0.866025 0.5 7640.91 12396)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 10.2">
+<use xlink:href="#path0_fill" transform="matrix(-0.5 -0.866025 0.866025 -0.5 7642.91 12406.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 4 0L 4 21L 0 21L 0 0Z"/>
+</defs>
+</svg>

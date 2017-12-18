@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic');
+
+@font-face {
+  font-family: 'PT Mono';
+  src: local('PT Mono'), url('./fonts/PTMono-Regular.woff2') format('woff2'),
+    url('./fonts/PTMono-Regular.woff') format('woff'),
+    url('./fonts/PTMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Mono';
+  src: local('PT Mono Bold'), url('./fonts/PTMono-Bold.woff2') format('woff2'),
+    url('./fonts/PTMono-Bold.woff') format('woff'),
+    url('./fonts/PTMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   background: #ffffff;
 }
